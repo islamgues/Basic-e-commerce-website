@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="search2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html">Home Page</a>
+                <a href="#">Products</a>
+                <a href="#">Categories</a>
+                <a href="#">About</a>
+            </nav>
+            <div class="search">
+                <button id="searchButton">Search</button>
+                <input type="search" id="searchQuery" name="q" placeholder="Search products...">
+                <div class="search-list">
+                    <ul id="searchResults"></ul>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <div class="post-list">
+                
+            </div>
+            <button class="load-more" data-page="1">Show More</button>
+        </main>
+    </div>
+
+    
+</body>
+
+</html>

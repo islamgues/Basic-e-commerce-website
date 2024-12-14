@@ -1,0 +1,178 @@
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px; /* Adjusted padding */
+  }
+
+  .header input[type="search"] {
+    margin-left: 10px; /* Adjusted margin */
+  }
+
+  .navbar a {
+    margin: 0 10px; /* Adjusted margin */
+  }
+
+  main {
+    margin-top: 60px; /* Adjusted margin */
+    padding: 0 20px; /* Adjusted padding */
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 700;
+}
+
+.header input[type="search"] {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.search {
+  right: 10px;
+  position: relative;
+}
+
+.search .search-list{
+  position:absolute;
+  left: 0;
+  top: 110%;
+  background-color:white;
+  width: 97%;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header button {
+  border: 1px solid black;
+  margin-right: -10px;
+  padding: 10px 20px;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  background: #047263;
+  transition: 0.3s;
+}
+
+.header button:hover {
+  background: #0f67cc;
+}
+
+.navbar {
+}
+
+.navbar a {
+  font-size: large;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+main {
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+
+.post:hover{
+  border-radius: 12px;background: rgb(240,248,255);
+  background: linear-gradient(90deg, rgba(240,248,255,1) 34%, rgba(0,212,255,0) 100%);
+}
+
+.post {
+  display: flex;
+  align-items: flex-start; /* Adjust alignment */
+  margin-bottom: 20px;
+  color: black;
+}
+
+.product-image {
+  width: 200px; /* Adjust this according to your image size */
+  height: 200px;
+  margin-right: 20px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+
+
+.load-more {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #047263;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.load-more:hover {
+  background-color: #0f67cc;
+}
+
+
